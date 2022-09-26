@@ -7,23 +7,25 @@ const Card = () => {
   return (
     <div>
       <div
-        className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:mx-auto md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        className="flex flex-col bg-white rounded-2xl border shadow-md font-Poppins md:flex-row md:mx-auto md:max-w-2xl md:mt-60 lg:mt-44 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
       >
-        <div className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-full md:rounded-full md:rounded-l-lg">
+        <div className="object-cover w-full h-96 text-zero rounded-t-lg md:h-full md:w-full md:rounded-full">
           <Image 
+            width={700}
+            height={1000}
             src={TabletShoe} 
             alt="tablet-shoe.jpg" 
-            className="" 
+            className="rounded-l-xl" 
             />
         </div>
 
-        <div className="flex flex-col justify-between p-4 leading-normal">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
+        <div className="flex flex-col p-6 leading-normal md:w-11/12">
+          <h2 className="text-white tracking-widestproduct">SHOE</h2>
+          <h5 className="mb-2 text-2xl font-bold font-LeagueSpartan tracking-tight text-gray-900 dark:text-white md:text-5xl md:mt-5">
+            Nike Air Vapor Max Flyknit
           </h5>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+              Where previous Air Max models filled the sole with as much air as possible, the VaporMax focuses on using less air, more efficiently.
           </p>
         </div>
       </div>

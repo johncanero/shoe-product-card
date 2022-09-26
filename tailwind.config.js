@@ -17,17 +17,23 @@ module.exports = {
       },
    
       fontSize: {
-  
+        'zero': '0em',
       },
 
       spacing: {
 
-      }
+      },
+      
+        
+      letterSpacing: {
+        widestproduct: '0.5em',
+      },
     },
-
     fontFamily: {
       Poppins: ['Poppins', 'sans-serif'],
+      LeagueSpartan: ['League Spartan', 'sans-serif']
     },
+ 
   },
   plugins: [],
 }
