@@ -27,6 +27,10 @@ const Card = () => {
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
               Where previous Air Max models filled the sole with as much air as possible, the VaporMax focuses on using less air, more efficiently.
           </p>
+          <div className="flex flex-wrap md:mt-4">
+            <h1 className="text-neonColor font-LeagueSpartan font-medium md:text-5xl">$199.99</h1>
+            <p className=" align-middle md:mt-2 text-gray-700 dark:text-gray-400 line-through md:mx-6">$249.99</p>
+          </div>
         </div>
       </div>
     </div>

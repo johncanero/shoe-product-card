@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
-      
+        neonColor: '#d7fe51',
       },
    
       fontSize: {
