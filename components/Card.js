@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import TabletShoe from "../public/images/tabletShoe.jpg";
+import MobileShoe from "../public/images/mobileShoe.png";
+
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faShoePrints} from '@fortawesome/free-solid-svg-icons'
 
@@ -8,8 +11,22 @@ import {faShoePrints} from '@fortawesome/free-solid-svg-icons'
 const Card = () => {
   return (
     <div>
-      <div className="flex flex-col bg-white rounded-2xl border shadow-2xl font-Poppins md:flex-row md:mx-auto md:max-w-2xl md:mt-60 lg:mt-40 hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
-        <div className="object-cover w-full h-96 text-zero rounded-t-lg md:h-full md:w-full md:rounded-full">
+      <div className="flex flex-col bg-white shadow-2xl font-Poppins md:flex-row md:rounded-2xl  md:mx-auto md:max-w-2xl md:mt-60 lg:mt-40 hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
+
+        {/* Tablet and Desktop */}
+            <div className="md:hidden object-cover text-zero">
+          <Image
+            width={600}
+            height={500}
+            src={MobileShoe}
+            alt="tablet-shoe.jpg"
+            className=""
+          />
+        </div>
+
+
+        {/* Tablet and Desktop */}
+        <div className="hidden md:block object-cover text-zero rounded-t-lg md:h-full md:w-full md:rounded-full">
           <Image
             width={700}
             height={1100}
