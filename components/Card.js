@@ -11,7 +11,7 @@ import {faShoePrints} from '@fortawesome/free-solid-svg-icons'
 const Card = () => {
   return (
     <div>
-      <div className="flex flex-col bg-white shadow-2xl font-Poppins md:flex-row md:rounded-2xl  md:mx-auto md:max-w-2xl md:mt-60 lg:mt-40 hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
+      <div className="flex flex-col shadow-2xl font-Poppins  sm:bg-zinc-800 sm:hover:bg-zinc-900 sm:h-screen md:h-auto md:flex-row md:rounded-2xl md:bg-white md:mx-auto md:max-w-2xl md:mt-52 lg:mt-40 md:hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
 
         {/* Tablet and Desktop */}
             <div className="md:hidden object-cover text-zero">
@@ -29,32 +29,32 @@ const Card = () => {
         <div className="hidden md:block object-cover text-zero rounded-t-lg md:h-full md:w-full md:rounded-full">
           <Image
             width={700}
-            height={1100}
+            height={1105}
             src={TabletShoe}
             alt="tablet-shoe.jpg"
             className="rounded-l-xl"
           />
         </div>
 
-        <div className="flex flex-col p-6 leading-normal md:w-11/12 md:p-9">
-          <h2 className="text-gray-900 flex"><FontAwesomeIcon className="w-5" icon={faShoePrints}></FontAwesomeIcon><span className="tracking-widestproduct md:px-3">SHOE</span></h2>
-          <h5 className="mb-2 text-2xl font-bold font-LeagueSpartan tracking-tight text-gray-900 dark:text-gray-800 md:text-5xl md:mt-5">
+        <div className="flex flex-col p-9 leading-normal md:w-11/12">
+          <h2 className=" text-slate-300 md:text-gray-900 flex"><FontAwesomeIcon className="w-6 md:w-5" icon={faShoePrints}></FontAwesomeIcon><span className="tracking-widestproduct px-3 text-lg">SHOE</span></h2>
+          <h5 className="text-white mb-2 mt-5 text-5xl font-bold font-LeagueSpartan tracking-tight md:text-gray-900 md:dark:text-gray-800 md:text-5xl md:mt-5">
             Nike Air Vapor Max Flyknit
           </h5>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-600">
+          <p className="mb-3 mt-2 md:mt-0 font-normal text-gray-500 md:text-gray-700 md:dark:text-gray-600">
             Where previous Air Max models filled the sole with as much air as
             possible, the VaporMax focuses on using less air, more efficiently.
           </p>
-          <div className="flex flex-wrap md:mt-4">
-            <h1 className=" text-gray-900 font-LeagueSpartan font-medium md:text-5xl">
+          <div className="flex flex-wrap mt-6 md:mt-4">
+            <h1 className=" text-white md:text-gray-900 font-LeagueSpartan font-semibold text-5xl">
               $199.99
             </h1>
-            <p className=" align-middle md:mt-2 text-gray-700 dark:text-gray-400 line-through md:mx-5">
+            <p className=" align-middle mx-5 text-gray-700 dark:text-gray-400 line-through md:mt-2">
               $249.99
             </p>
           </div>
-
-          <button className=" bg-neonColor text-gray-900 dark:hover:bg-gray-900 hover:text-gray-200  font-semibold py-3 px-4 rounded-xl md:mt-8">
+          
+          <button className=" bg-neonColor text-gray-900 dark:hover:bg-gray-900 hover:text-gray-200  font-semibold py-3 px-4 rounded-xl mt-6 md:mt-8">
             Add to Cart
           </button>
         </div>
