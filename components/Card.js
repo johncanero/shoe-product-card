@@ -17,7 +17,7 @@ const Card = () => {
             <div className="md:hidden object-cover text-zero">
           <Image
             width={600}
-            height={500}
+            height={450}
             src={MobileShoe}
             alt="tablet-shoe.jpg"
             className=""

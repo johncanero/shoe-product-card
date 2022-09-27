@@ -11,7 +11,7 @@ export default function Home() {
           <meta itemprop="name" content="Shoe Card" />
           <meta itemprop="description" content="Shoe Product Card created with Next JS and Tailwind CSS" />
           <meta itemprop="image" content="Shoe Card Feature" />
-          <link rel="icon" href="/favicon.ico" />     
+          <link rel="icon" href="/images/nikeLogo.png" />     
       </Head>
 
       <main>
