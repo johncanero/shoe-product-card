@@ -38,7 +38,7 @@ const Card = () => {
 
         <div className="flex flex-col p-9 leading-normal md:w-11/12">
           <h2 className=" text-slate-300 md:text-gray-900 flex"><FontAwesomeIcon className="w-6 md:w-5" icon={faShoePrints}></FontAwesomeIcon><span className="tracking-widestproduct px-3 text-lg">SHOE</span></h2>
-          <h5 className="text-white mb-2 mt-5 text-5xl font-bold font-LeagueSpartan tracking-tight md:text-gray-900 md:dark:text-gray-800 md:text-5xl md:mt-5">
+          <h5 className="text-white mb-2 mt-5 text-5xl font-bold font-LeagueSpartan tracking-tight md:text-gray-900 md:dark:text-gray-900 md:text-5xl md:mt-5">
             Nike Air Vapor Max Flyknit
           </h5>
           <p className="mb-3 mt-2 md:mt-0 font-normal text-gray-500 md:text-gray-700 md:dark:text-gray-600">
