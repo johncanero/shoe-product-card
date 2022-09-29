@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Help | Join Us | Sign In */}
-      <div className="hidden md:block bg-neonColor2 font-Poppins md:text-sm md:py-2 lg:text-xs lg:py-2.5">
+      <div className="hidden md:block bg-neonColor2 font-Poppins md:text-sm md:py-2.5 lg:text-xs lg:py-2.5">
         <div className="flex justify-center md:ml-100 lg:ml-150">
           <Link href="https://www.nike.com/ph/help" passHref>
             <a target="_blank" rel="noopener noreferrer">
