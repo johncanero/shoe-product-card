@@ -78,7 +78,7 @@ const Navbar = () => {
               />
             </div>
 
-            {/* Mobile */}
+            {/* Hamburger Button - Mobile */}
             <button
               data-collapse-toggle="navbar-search"
               type="button"
