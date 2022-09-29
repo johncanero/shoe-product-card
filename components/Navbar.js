@@ -155,7 +155,7 @@ const Navbar = () => {
             </div>
 
             {/* Anchor Links */}
-            <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:ml-16 lg:ml-72 lg:mr-3">
+            <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:ml-16 lg:ml-72 lg:mr-6">
               <li>
                 <Link href="https://www.nike.com/men" passHref>
                   <a
