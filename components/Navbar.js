@@ -1,49 +1,66 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import NikeLogoBlack from "../public/images/nikeLogoBlack.png"
+import NikeLogoBlack from "../public/images/nikeLogoBlack.png";
 
 const Navbar = () => {
   return (
     <div>
-
       {/* Help | Join Us | Sign In */}
-      <div className="flex bg-neonColor2 lg:text-sm lg:py-2 lg:justify-center">
-        <div className="lg:flex lg:justify-between lg:ml-150">
-           <p className="lg:mx-1">Help</p>
-           <p className="lg:mx-1">|</p>
-           <p className="lg:mx-1">Join Us</p>
-           <p className="lg:mx-1">|</p>
-           <p className="lg:mx-1">Sign In</p>
+      <div className="flex bg-neonColor2 font-Poppins md:text-sm md:py-2 lg:text-xs lg:py-2.5 justify-center">
+        <div className="flex lg:flex justify-between md:ml-100 lg:ml-150">
+          <Link href="https://www.nike.com/ph/help" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <p className=" md:mx-1.5 lg:mx-1.5">Help</p>
+            </a>
+          </Link>
+          <p className="lg:mx-1">|</p>
+          <Link href="https://www.nike.com/ph/membership" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <p className=" md:mx-1.5 lg:mx-1.5">Join Us</p>
+            </a>
+          </Link>
+          <p className="lg:mx-1">|</p>
+          <Link href="https://www.nike.com/ph/member/profile/login?continueUrl=https://www.nike.com/ph/membership" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <p className=" md:mx-1.5 lg:mx-1.5">Sign In</p>
+            </a>
+          </Link>
         </div>
       </div>
-      
+
       <nav className="flex justify-center bg-white border-gray-200 px-2 sm:px-4 py-1 rounded">
         <div className="container flex flex-wrap justify-between items-center">
-
           {/* Nike Logo */}
           <Link href="" passHref>
-            <a className="w-12 md:ml-10 lg:ml-1"> 
-                <Image
-                  src={NikeLogoBlack}
-                  alt='nike-logo-black.png'
-                >
-                </Image>
+            <a className="w-12 md:ml-10 lg:ml-1">
+              <Image src={NikeLogoBlack} alt="nike-logo-black.png"></Image>
             </a>
           </Link>
 
           <div className="flex md:order-2">
-          
             {/* Search Button - Mobile */}
             <button
-                type="button"
-                data-collapse-toggle="navbar-search"
-                aria-controls="navbar-search"
-                aria-expanded="false"
-                className="md:hidden text-gray-500 dark:text-gray-400 rounded-lg text-sm p-2.5 mr-1  focus:ring-2 focus:ring-gray-200"
+              type="button"
+              data-collapse-toggle="navbar-search"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+              className="md:hidden text-gray-500 dark:text-gray-400 rounded-lg text-sm p-2.5 mr-1  focus:ring-2 focus:ring-gray-200"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                  <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                <span className="sr-only">Search</span>
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span className="sr-only">Search</span>
             </button>
 
             {/* Search Icon with Input */}
@@ -76,6 +93,7 @@ const Navbar = () => {
               />
             </div>
 
+            {/* Mobile */}
             <button
               data-collapse-toggle="navbar-search"
               type="button"
@@ -99,7 +117,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          
+
           <div
             className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="navbar-search"
@@ -129,31 +147,33 @@ const Navbar = () => {
             </div>
 
             {/* Anchor Links */}
-            <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 lg:ml-60 lg:mr-3">
+            <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:ml-16 lg:ml-72 lg:mr-3">
               <li>
                 <Link href="/" passHref>
-                  <a target="_blank" rel="noopener noreferrer"
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block py-2 pr-4 pl-3 mx-2 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:text-sm dark:text-white lg:mx-12"
                     aria-current="page"
                   >
-                    Home
+                    Men
                   </a>
                 </Link>
               </li>
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 mx-2 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:text-sm dark:text-white lg:mx-16"
+                  className="block py-2 pr-4 pl-3 mx-2 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:text-sm dark:text-white lg:mx-12"
                 >
-                  About
+                  Women
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 mx-2 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:text-sm dark:text-white lg:mx-16"
+                  className="block py-2 pr-4 pl-3 mx-2 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:text-sm dark:text-white lg:mx-12"
                 >
-                  Services
+                  Kids
                 </a>
               </li>
             </ul>

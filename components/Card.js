@@ -41,7 +41,7 @@ const Card = () => {
           <h5 className="text-white mb-2 mt-5 text-5xl font-bold font-LeagueSpartan tracking-tight md:text-gray-900 md:dark:text-gray-900 md:text-5xl md:mt-5">
             Nike Air Vapor Max Flyknit
           </h5>
-          <p className="mb-3 mt-2 md:mt-0 font-normal text-gray-500 md:text-gray-700 md:dark:text-gray-600">
+          <p className="mb-3 mt-2 md:mt-0 font-Poppins font-normal text-gray-500 md:text-gray-700 md:dark:text-gray-600">
             Where previous Air Max models filled the sole with as much air as
             possible, the VaporMax focuses on using less air, more efficiently.
           </p>
