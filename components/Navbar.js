@@ -8,7 +8,7 @@ const Navbar = () => {
     <div>
 
       {/* Help | Join Us | Sign In */}
-      <div className="flex bg-neonColor lg:text-sm lg:py-2 lg:justify-center">
+      <div className="flex bg-neonColor2 lg:text-sm lg:py-2 lg:justify-center">
         <div className="lg:flex lg:justify-between lg:ml-150">
            <p className="lg:mx-1">Help</p>
            <p className="lg:mx-1">|</p>
