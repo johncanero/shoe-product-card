@@ -11,7 +11,7 @@ function Navbar2() {
     <div>
       <nav className="justify-center bg-white shadow-sm md:w-full md:flex z-10">
         <div className="container md:justify-between">
-          <div className="flex items-center h-14 w-96 md:w-full">
+          <div className="flex items-center h-14 w-screen md:w-full">
             <div className="flex sm:ml-10 items-center md:justify-between w-full">
               <div className="items-center flex-shrink-0 ">
                 {/* Nike Logo */}
@@ -182,9 +182,9 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Home
+                  Men
                 </Link>
                 <Link
                   href="/about"
@@ -193,9 +193,9 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black  block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  About
+                  Women
                 </Link>
 
                 <Link
@@ -205,22 +205,10 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black  block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
+                  Kids
                 </Link>
-                <Link
-                  href="/services"
-                  activeClass="services"
-                  to="services"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Services
-                </Link>
-
                 <Link
                   href="/contact"
                   activeClass="work"
@@ -228,9 +216,9 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Contact
+                  Customize
                 </Link>
               </div>
             </div>
