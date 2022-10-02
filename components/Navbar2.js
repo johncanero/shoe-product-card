@@ -9,18 +9,18 @@ function Navbar2() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className=" bg-white shadow-sm w-full z-10">
-        <div className="w-full">
-          <div className="flex items-center h-20 w-full">
-            <div className="flex items-center  mx-20  justify-between w-full">
-              <div className="flex justify-center items-center flex-shrink-0 ">
+      <nav className="flex justify-center bg-white shadow-sm w-full z-10">
+        <div className="container flex flex-wrap justify-between items-center">
+          <div className="flex items-center justify-center h-14 lg:w-full">
+            <div className="flex items-center justify-between w-full">
+              <div className="flex items-center flex-shrink-0 ">
                 {/* Nike Logo */}
                 <div className="md:ml-10 lg:ml-1">
                   <LinkUrl href="/" passHref>
                     <a target="_blank" rel="noopener noreferrer">
                       <Image
-                        width={50}
-                        height={50}
+                        width={60}
+                        height={60}
                         src={NikeLogoBlack}
                         alt="nike-logo-black.png"
                       ></Image>
@@ -28,63 +28,91 @@ function Navbar2() {
                   </LinkUrl>
                 </div>
               </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+
+              {/* Medium to Large Screens */}
+              <div className="hidden md:ml-10 lg:ml-36 md:block">
+                <div className="lg:ml-10 flex items-baseline space-x-4">
+                  {/* React Scroll Links */}
                   <Link
-                    activeClass="Home"
-                    to="about"
+                    activeClass="Men"
+                    to="men"
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
-                    Home
+                    Men
                   </Link>
                   <Link
-                    activeClass="about"
-                    to="about"
+                    activeClass="Women"
+                    to="women"
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
-                    About
+                    Women
                   </Link>
                   <Link
-                    activeClass="work"
-                    to="work"
+                    activeClass="Kids"
+                    to="kids"
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
-                    Projects
+                    Kids
                   </Link>
 
                   <Link
-                    activeClass="Services"
-                    to="work"
+                    activeClass="Customize"
+                    to="customize"
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
-                    Services
-                  </Link>
-
-                  <Link
-                    activeClass="contact"
-                    to="contact"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black"
-                  >
-                    Contact
+                    Customize
                   </Link>
                 </div>
               </div>
+
+              {/* Search Icon with Input */}
+              <div className="hidden relative md:block md:ml-10">
+                {/* Search Icon */}
+                <form className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-non lg:ml-9">
+                  <button
+                    type="submit"
+                    className="p-1 focus:outline-none focus:shadow-outline"
+                  >
+                    <svg
+                      className="w-5 h-5 text-gray-500 "
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <span className="sr-only">Search icon</span>
+                </form>
+
+                {/* Input Field - Tablet and Desktop */}
+                <input
+                  type="text"
+                  id="search-navbar"
+                  className="block p-2 pl-10 w-full text-gray-900 bg-gray-100 rounded-2xl sm:text-sm dark:placeholder-gray-400 dark:text-black lg:ml-10"
+                  placeholder="Search..."
+                />
+              </div>
             </div>
+
+            {/* Mobile */}
             <div className="mr-10 flex md:hidden ">
               <button
                 onClick={() => setIsOpen(!isOpen)}
