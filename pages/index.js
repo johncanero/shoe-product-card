@@ -1,7 +1,10 @@
 import Head from 'next/head'
+import Help from '../components/Help'
 import Navbar from '../components/Navbar'
+import Navbar2 from '../components/Navbar2'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
+
 
 
 export default function Home() {
@@ -17,7 +20,9 @@ export default function Home() {
       </Head>
 
       <main>
-          <Navbar />
+          <Help />
+          <Navbar2 />
+          {/* <Navbar /> */}
           <Card />
       </main>
 

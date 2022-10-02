@@ -8,7 +8,6 @@ const Navbar = () => {
   return (
     <div>
       <Help />
-
       <nav className="flex justify-center bg-white border-gray-200 px-2 sm:px-4 py-1 rounded">
         <div className="container flex flex-wrap justify-between items-center">
           {/* Nike Logo */}
