@@ -175,9 +175,11 @@ function Navbar2() {
                 ref={ref}
                 className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
               >
-                <Link
-                  href="/home"
-                  activeClass="home"
+                <a
+                  href="https://www.nike.com/ph/men"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  activeClass="men"
                   to="home"
                   smooth={true}
                   offset={50}
@@ -185,10 +187,12 @@ function Navbar2() {
                   className="cursor-pointer hover:bg-neonColor text-black hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Men
-                </Link>
-                <Link
-                  href="/about"
-                  activeClass="about"
+                </a>
+                <a
+                  href="https://www.nike.com/ph/women"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  activeClass="women"
                   to="about"
                   smooth={true}
                   offset={50}
@@ -196,11 +200,13 @@ function Navbar2() {
                   className="cursor-pointer hover:bg-neonColor text-black hover:text-black  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Women
-                </Link>
+                </a>
 
-                <Link
-                  href="/work"
-                  activeClass="work"
+                <a
+                  href="https://www.nike.com/ph/kids"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  activeClass="kids"
                   to="work"
                   smooth={true}
                   offset={50}
@@ -208,10 +214,12 @@ function Navbar2() {
                   className="cursor-pointer hover:bg-neonColor text-black hover:text-black  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Kids
-                </Link>
+                </a>
                 <Link
-                  href="/contact"
-                  activeClass="work"
+                  href="https://www.nike.com/ph/nike-by-you"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  activeClass="customize"
                   to="work"
                   smooth={true}
                   offset={50}
