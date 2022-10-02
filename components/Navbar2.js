@@ -11,7 +11,7 @@ function Navbar2() {
     <div>
       <nav className="flex justify-center bg-white shadow-sm w-full z-10">
         <div className="container flex flex-wrap justify-between items-center">
-          <div className="flex items-center justify-center h-14 lg:w-full">
+          <div className="flex items-center justify-center h-14 w-full">
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center flex-shrink-0 ">
                 {/* Nike Logo */}
@@ -30,7 +30,7 @@ function Navbar2() {
               </div>
 
               {/* Medium to Large Screens */}
-              <div className="hidden md:ml-10 lg:ml-36 md:block">
+              <div className="hidden md:ml-8 lg:ml-36 md:block">
                 <div className="lg:ml-10 flex items-baseline space-x-4">
                   {/* React Scroll Links */}
                   <Link
@@ -78,7 +78,7 @@ function Navbar2() {
               </div>
 
               {/* Search Icon with Input */}
-              <div className="hidden relative md:block md:ml-10">
+              <div className="hidden relative md:block">
                 {/* Search Icon */}
                 <form className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-non lg:ml-9">
                   <button
@@ -106,7 +106,7 @@ function Navbar2() {
                 <input
                   type="text"
                   id="search-navbar"
-                  className="block p-2 pl-10 w-full text-gray-900 bg-gray-100 rounded-2xl sm:text-sm dark:placeholder-gray-400 dark:text-black lg:ml-10"
+                  className="block p-2 pl-10 text-gray-900 bg-gray-100 rounded-2xl sm:text-sm dark:placeholder-gray-400 dark:text-black md:mr-10 lg:ml-10 lg:w-full"
                   placeholder="Search..."
                 />
               </div>
