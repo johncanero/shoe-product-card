@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { Link } from "react-scroll";
-import LinkUrl from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import NikeLogoBlack from "../public/images/nikeLogoBlack.png";
 
@@ -16,7 +15,7 @@ function Navbar2() {
               <div className="items-center flex-shrink-0 ">
                 {/* Nike Logo */}
                 <div className="md:ml-10 lg:ml-1">
-                  <LinkUrl href="/" passHref>
+                  <Link href="/" passHref>
                     <a target="_blank" rel="noopener noreferrer">
                       <Image
                         width={60}
@@ -25,15 +24,18 @@ function Navbar2() {
                         alt="nike-logo-black.png"
                       ></Image>
                     </a>
-                  </LinkUrl>
+                  </Link>
                 </div>
               </div>
 
               {/* Medium to Large Screens */}
-              <div className="hidden md:ml-8 lg:ml-36 md:block">
+              <div className="hidden lg:ml-36 md:block">
                 <div className="lg:ml-10 flex items-baseline space-x-4">
                   {/* React Scroll Links */}
-                  <Link
+                  <a
+                    href="https://www.nike.com/ph/men"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     activeClass="Men"
                     to="men"
                     smooth={true}
@@ -42,8 +44,11 @@ function Navbar2() {
                     className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
                     Men
-                  </Link>
-                  <Link
+                  </a>
+                  <a
+                    href="https://www.nike.com/ph/women"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     activeClass="Women"
                     to="women"
                     smooth={true}
@@ -52,8 +57,11 @@ function Navbar2() {
                     className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
                     Women
-                  </Link>
-                  <Link
+                  </a>
+                  <a
+                    href="https://www.nike.com/ph/kids"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     activeClass="Kids"
                     to="kids"
                     smooth={true}
@@ -62,9 +70,12 @@ function Navbar2() {
                     className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
                     Kids
-                  </Link>
+                  </a>
 
-                  <Link
+                  <a
+                    href="https://www.nike.com/ph/nike-by-you"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     activeClass="Customize"
                     to="customize"
                     smooth={true}
@@ -73,7 +84,7 @@ function Navbar2() {
                     className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
                   >
                     Customize
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -215,7 +226,7 @@ function Navbar2() {
                 >
                   Kids
                 </a>
-                <Link
+                <a
                   href="https://www.nike.com/ph/nike-by-you"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -227,7 +238,7 @@ function Navbar2() {
                   className="cursor-pointer hover:bg-neonColor text-black hover:text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Customize
-                </Link>
+                </a>
               </div>
             </div>
           )}
