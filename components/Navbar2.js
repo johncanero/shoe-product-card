@@ -9,11 +9,11 @@ function Navbar2() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="flex justify-center bg-white shadow-sm w-full z-10">
-        <div className="container flex flex-wrap justify-between items-center">
-          <div className="flex items-center justify-center h-14 w-full">
-            <div className="flex items-center justify-between w-full">
-              <div className="flex items-center flex-shrink-0 ">
+      <nav className="justify-center bg-white shadow-sm md:w-full md:flex z-10">
+        <div className="container md:justify-between">
+          <div className="flex items-center h-14 w-96 md:w-full">
+            <div className="flex sm:ml-10 items-center md:justify-between w-full">
+              <div className="items-center flex-shrink-0 ">
                 {/* Nike Logo */}
                 <div className="md:ml-10 lg:ml-1">
                   <LinkUrl href="/" passHref>
@@ -117,7 +117,7 @@ function Navbar2() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
+                className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-500  hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >

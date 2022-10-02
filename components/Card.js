@@ -54,7 +54,7 @@ const Card = () => {
             </p>
           </div>
           
-          <button className=" bg-neonColor text-gray-900 dark:hover:bg-gray-900 hover:text-gray-200  font-semibold py-3 px-4 rounded-xl mt-6 md:mt-8">
+          <button className=" bg-neonColor text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-3 px-4 rounded-xl mt-6 md:mt-8">
             Add to Cart
           </button>
         </div>
