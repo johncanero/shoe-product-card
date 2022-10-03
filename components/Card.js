@@ -14,19 +14,13 @@ const Card = () => {
       <div className="flex flex-col shadow-2xl font-Poppins  sm:bg-zinc-800 sm:hover:bg-zinc-900 sm:h-screen md:h-auto md:flex-row md:rounded-2xl md:bg-white md:mx-auto md:max-w-2xl md:mt-36 lg:mt-20 md:hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
         {/* Tablet and Desktop */}
         <div className="md:hidden object-cover text-zero">
-          <a
-            href="https://www.nike.com/ph/men"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              width={600}
-              height={450}
-              src={MobileShoe}
-              alt="tablet-shoe.jpg"
-              className=""
-            />
-          </a>
+          <Image
+            width={600}
+            height={450}
+            src={MobileShoe}
+            alt="tablet-shoe.jpg"
+            className=""
+          />
         </div>
 
         {/* Tablet and Desktop */}
@@ -70,15 +64,11 @@ const Card = () => {
             </p>
           </div>
 
-          <Link href="https://www.nike.com/ph/w/sale-3yaep" passHref={true}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" bg-neonColor text-center text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-3 px-4 rounded-xl mt-6 md:mt-8"
+            <div
+              className=" bg-neonColor text-center text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-3 px-4 rounded-xl mt-7 md:mt-8"
             >
               <button>Add to Cart</button>
-            </a>
-          </Link>
+            </div>
         </div>
       </div>
     </div>
