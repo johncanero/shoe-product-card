@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Help from '../components/Help'
 import Navbar from '../components/Navbar'
-import Navbar2 from '../components/Navbar2'
+import NavbarToggle from '../components/NavbarToggle'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 
@@ -21,7 +21,7 @@ export default function Home() {
 
       <main>
           <Help />
-          <Navbar2 />
+          <NavbarToggle />
           {/* <Navbar /> */}
           <Card />
       </main>

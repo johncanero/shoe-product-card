@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NikeLogoBlack from "../public/images/nikeLogoBlack.png";
 
-function Navbar2() {
+function NavbarToggle() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
@@ -248,4 +248,4 @@ function Navbar2() {
   );
 }
 
-export default Navbar2;
+export default NavbarToggle;
