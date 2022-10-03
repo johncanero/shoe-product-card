@@ -10,7 +10,7 @@ function Navbar2() {
     <div>
       <nav className="justify-center bg-white shadow-sm md:w-full md:flex z-10">
         <div className="container md:justify-between">
-          <div className="flex items-center h-16 w-screen md:w-full">
+          <div className="flex items-center h-16 md:h-14 w-screen md:w-full">
             <div className="flex sm:ml-10 items-center md:justify-between w-full">
               <div className="items-center flex-shrink-0 ">
                 {/* Nike Logo */}

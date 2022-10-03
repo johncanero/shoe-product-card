@@ -1,43 +1,59 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import TabletShoe from "../public/images/tabletShoe.jpg";
 import MobileShoe from "../public/images/mobileShoe.png";
 
 // Font Awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faShoePrints} from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoePrints } from "@fortawesome/free-solid-svg-icons";
 
 const Card = () => {
   return (
     <div>
       <div className="flex flex-col shadow-2xl font-Poppins  sm:bg-zinc-800 sm:hover:bg-zinc-900 sm:h-screen md:h-auto md:flex-row md:rounded-2xl md:bg-white md:mx-auto md:max-w-2xl md:mt-36 lg:mt-20 md:hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
-
         {/* Tablet and Desktop */}
-            <div className="md:hidden object-cover text-zero">
-          <Image
-            width={600}
-            height={450}
-            src={MobileShoe}
-            alt="tablet-shoe.jpg"
-            className=""
-          />
+        <div className="md:hidden object-cover text-zero">
+          <a
+            href="https://www.nike.com/ph/men"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              width={600}
+              height={450}
+              src={MobileShoe}
+              alt="tablet-shoe.jpg"
+              className=""
+            />
+          </a>
         </div>
-
 
         {/* Tablet and Desktop */}
         <div className="hidden md:block object-cover text-zero rounded-t-lg md:h-full md:w-full md:rounded-full">
-          <Image
-            width={700}
-            height={1105}
-            src={TabletShoe}
-            alt="tablet-shoe.jpg"
-            className="rounded-l-xl"
-          />
+          <a
+            href="https://www.nike.com/ph/men"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              width={700}
+              height={1105}
+              src={TabletShoe}
+              alt="tablet-shoe.jpg"
+              className="rounded-l-xl"
+            />
+          </a>
         </div>
 
         <div className="flex flex-col p-9 leading-normal md:w-11/12">
-          <h2 className=" text-slate-300 md:text-gray-900 flex"><FontAwesomeIcon className="w-6 md:w-5" icon={faShoePrints}></FontAwesomeIcon><span className="tracking-widestproduct px-3 text-lg">SHOE</span></h2>
+          <h2 className=" text-slate-300 md:text-gray-900 flex">
+            <FontAwesomeIcon
+              className="w-6 md:w-5"
+              icon={faShoePrints}
+            ></FontAwesomeIcon>
+            <span className="tracking-widestproduct px-3 text-lg">SHOE</span>
+          </h2>
           <h5 className="text-white mb-2 mt-5 text-5xl font-bold font-LeagueSpartan tracking-tight md:text-gray-900 md:dark:text-gray-900 md:text-5xl md:mt-5">
             Nike Air Vapor Max Flyknit
           </h5>
@@ -53,10 +69,16 @@ const Card = () => {
               $249.99
             </p>
           </div>
-          
-          <button className=" bg-neonColor text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-3 px-4 rounded-xl mt-6 md:mt-8">
-            Add to Cart
-          </button>
+
+          <Link href="https://www.nike.com/ph/w/sale-3yaep" passHref={true}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" bg-neonColor text-center text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-3 px-4 rounded-xl mt-6 md:mt-8"
+            >
+              <button>Add to Cart</button>
+            </a>
+          </Link>
         </div>
       </div>
     </div>
