@@ -181,7 +181,7 @@ function Navbar2() {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
+            <div className="md:hidden flex justify-center" id="mobile-menu">
               <div
                 ref={ref}
                 className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
@@ -195,7 +195,7 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black block text-center py-2 rounded-md text-base font-medium"
                 >
                   Men
                 </a>
@@ -208,7 +208,7 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black  block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black  block text-center py-2 rounded-md text-base font-medium"
                 >
                   Women
                 </a>
@@ -222,7 +222,7 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black  block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black  block text-center py-2 rounded-md text-base font-medium"
                 >
                   Kids
                 </a>
@@ -235,7 +235,7 @@ function Navbar2() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-neonColor text-black hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black  block text-center py-2 rounded-md text-base font-medium"
                 >
                   Customize
                 </a>
