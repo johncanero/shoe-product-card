@@ -19,7 +19,7 @@
 
 This is the Product Shoe Card: Nike powered by Next Js and Tailwind CSS.
 
-A Toggle Feauture in Mobile and product presentation for Nike. 
+A Toggle Feauture in Mobile and product presentation for Nike.
 
 </div>
 
