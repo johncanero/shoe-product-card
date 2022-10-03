@@ -10,7 +10,7 @@ function Navbar2() {
     <div>
       <nav className="justify-center bg-white shadow-sm md:w-full md:flex z-10">
         <div className="container md:justify-between">
-          <div className="flex items-center h-14 w-screen md:w-full">
+          <div className="flex items-center h-16 w-screen md:w-full">
             <div className="flex sm:ml-10 items-center md:justify-between w-full">
               <div className="items-center flex-shrink-0 ">
                 {/* Nike Logo */}
@@ -91,7 +91,7 @@ function Navbar2() {
               {/* Search Icon with Input */}
               <div className="hidden relative md:block">
                 {/* Search Icon */}
-                <form className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-non lg:ml-9">
+                <form className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-non lg:ml-11">
                   <button
                     type="submit"
                     className="p-1 focus:outline-none focus:shadow-outline"
@@ -117,7 +117,7 @@ function Navbar2() {
                 <input
                   type="text"
                   id="search-navbar"
-                  className="block p-2 pl-10 text-gray-900 bg-gray-100 rounded-2xl sm:text-sm dark:placeholder-gray-400 dark:text-black md:mr-10 lg:ml-10 lg:w-full"
+                  className="block p-2 pl-10 text-gray-900 bg-gray-100 rounded-2xl sm:text-sm dark:placeholder-gray-400 dark:text-black md:mr-10 lg:ml-12 lg:w-full"
                   placeholder="Search..."
                 />
               </div>
@@ -184,7 +184,7 @@ function Navbar2() {
             <div className="md:hidden flex justify-center" id="mobile-menu">
               <div
                 ref={ref}
-                className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+                className="bg-white px-2 pt-2 pb-3 space-y-2 sm:px-3"
               >
                 <a
                   href="https://www.nike.com/ph/men"
