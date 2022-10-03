@@ -9,7 +9,7 @@
 
 <div align="center">
   <a href="https://shoe-product-card-by-johncanero.vercel.app/" target="_blank">
-    <img alt="shoe-product" height="100" src="./public/images/nikeLogoBlack.png"/>
+    <img alt="shoe-product" height="100" src="./public/images/nikeLogoBlackOutline.png"/>
   </a>
 </div>
 
