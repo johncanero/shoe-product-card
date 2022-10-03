@@ -12,7 +12,7 @@ const Card = () => {
   return (
     <div>
       <div className="flex flex-col shadow-2xl font-Poppins  sm:bg-zinc-800 sm:hover:bg-zinc-900 sm:h-screen md:h-auto md:flex-row md:rounded-2xl md:bg-white md:mx-auto md:max-w-2xl md:mt-36 lg:mt-20 md:hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
-        {/* Tablet and Desktop */}
+        {/* Mobile */}
         <div className="md:hidden object-cover text-zero">
           <Image
             width={600}
@@ -25,11 +25,6 @@ const Card = () => {
 
         {/* Tablet and Desktop */}
         <div className="hidden md:block object-cover text-zero rounded-t-lg md:h-full md:w-full md:rounded-full">
-          <a
-            href="https://www.nike.com/ph/men"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <Image
               width={700}
               height={1105}
@@ -37,7 +32,6 @@ const Card = () => {
               alt="tablet-shoe.jpg"
               className="rounded-l-xl"
             />
-          </a>
         </div>
 
         <div className="flex flex-col p-9 leading-normal md:w-11/12">

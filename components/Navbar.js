@@ -133,16 +133,15 @@ const Navbar = () => {
             {/* Anchor Links */}
             <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:ml-16 lg:ml-72 lg:mr-6">
               <li>
-                <Link href="https://www.nike.com/men" passHref>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block py-2 pr-4 pl-3 mx-2 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:text-sm dark:text-white lg:mx-12 lg:text-base"
-                    aria-current="page"
-                  >
-                    Men
-                  </a>
-                </Link>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.nike.com/men"
+                  className="block py-2 pr-4 pl-3 mx-2 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:text-sm dark:text-white lg:mx-12 lg:text-base"
+                  aria-current="page"
+                >
+                  Men
+                </a>
               </li>
               <li>
                 <a
