@@ -12,7 +12,7 @@ import { faShoePrints } from "@fortawesome/free-solid-svg-icons";
 const Card = () => {
   return (
     <div>
-      <div className="flex flex-col shadow-2xl font-Poppins  sm:bg-zinc-800 sm:hover:bg-zinc-900 sm:h-screen md:h-auto md:flex-row md:rounded-2xl md:bg-white md:mx-auto md:max-w-2xl md:mt-36 lg:mt-20 md:hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
+      <div className="flex flex-col shadow-2xl font-Poppins  sm:bg-zinc-800 sm:hover:bg-zinc-900 sm:h-screen md:h-auto md:flex-row md:rounded-2xl md:bg-white md:mx-auto md:max-w-2xl md:mt-32 lg:mt-20 md:hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-100">
         {/* Mobile */}
         <div className="md:hidden object-cover text-zero">
           <Image
@@ -63,6 +63,10 @@ const Card = () => {
               className=" bg-neonColor text-center text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-4 px-4 rounded-xl mt-7 md:mt-8"
             >
               <button>Add to Cart</button>
+            </div>
+
+            <div className="block md:hidden italic text-gray-200 text-center mt-10 mx-8">
+              <p>“Yesterday you said tomorrow. JUST DO IT.” - <span className=" font-bold">Nike</span></p>
             </div>
         </div>
       </div>
