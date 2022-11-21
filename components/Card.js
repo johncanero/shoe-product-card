@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+// Images
 import TabletShoe from "../public/images/tabletShoe.jpg";
-import MobileShoe from "../public/images/mobileShoe.png";
+import NikeAirMax from "../public/images/nikeAirMax.jpg";
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,8 +17,8 @@ const Card = () => {
         <div className="md:hidden object-cover text-zero">
           <Image
             width={600}
-            height={450}
-            src={MobileShoe}
+            height={350}
+            src={NikeAirMax}
             alt="tablet-shoe.jpg"
             className=""
           />
