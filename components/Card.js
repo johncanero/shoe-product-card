@@ -28,7 +28,7 @@ const Card = () => {
         <div className="hidden md:block object-cover text-zero rounded-t-lg md:h-full md:w-full md:rounded-full">
             <Image
               width={700}
-              height={1105}
+              height={1125}
               src={TabletShoe}
               alt="tablet-shoe.jpg"
               className="rounded-l-xl"
@@ -60,7 +60,7 @@ const Card = () => {
           </div>
 
             <div
-              className=" bg-neonColor text-center text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-3 px-4 rounded-xl mt-7 md:mt-8"
+              className=" bg-neonColor text-center text-gray-900 dark:hover:bg-gray-300 hover:text-black  font-semibold py-4 px-4 rounded-xl mt-7 md:mt-8"
             >
               <button>Add to Cart</button>
             </div>
