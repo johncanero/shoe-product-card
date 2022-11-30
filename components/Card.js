@@ -64,10 +64,6 @@ const Card = () => {
             >
               <button>Add to Cart</button>
             </div>
-
-//             <div className="block md:hidden italic text-gray-200 text-sm text-center mt-6 mx-12">
-//               <p>“Yesterday you said tomorrow. JUST DO IT.” - <span className=" font-bold">Nike</span></p>
-//             </div>
         </div>
       </div>
     </div>
