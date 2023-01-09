@@ -8,10 +8,10 @@ function NavbarToggle() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="justify-center bg-white shadow-sm md:w-full md:flex z-10">
+      <nav className="z-10 justify-center bg-white shadow-sm md:w-full md:flex">
         <div className="container md:justify-between">
-          <div className="flex items-center h-16 md:h-14 w-screen md:w-full">
-            <div className="flex sm:ml-10 items-center md:justify-between w-full">
+          <div className="flex items-center w-screen h-16 md:h-14 md:w-full">
+            <div className="flex items-center w-full sm:ml-10 md:justify-between">
               <div className="items-center flex-shrink-0 ">
                 {/* Nike Logo */}
                 <div className="md:ml-10 lg:ml-1">
@@ -30,7 +30,7 @@ function NavbarToggle() {
 
               {/* Medium to Large Screens */}
               <div className="hidden lg:ml-36 md:block">
-                <div className="lg:ml-10 flex items-baseline space-x-4">
+                <div className="flex items-baseline space-x-4 lg:ml-10">
                   {/* React Scroll Links */}
                   <a
                     href="https://www.nike.com/ph/men"
@@ -41,7 +41,7 @@ function NavbarToggle() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
+                    className="py-2 text-base font-medium text-black transition duration-150 border-b-2 border-transparent cursor-pointer hover:border-black md:px-3 lg:px-5"
                   >
                     Men
                   </a>
@@ -54,7 +54,7 @@ function NavbarToggle() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
+                    className="py-2 text-base font-medium text-black transition duration-150 border-b-2 border-transparent cursor-pointer hover:border-black md:px-3 lg:px-5"
                   >
                     Women
                   </a>
@@ -67,7 +67,7 @@ function NavbarToggle() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
+                    className="py-2 text-base font-medium text-black transition duration-150 border-b-2 border-transparent cursor-pointer hover:border-black md:px-3 lg:px-5"
                   >
                     Kids
                   </a>
@@ -81,7 +81,7 @@ function NavbarToggle() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black md:px-3 lg:px-5 py-2 text-base font-medium"
+                    className="py-2 text-base font-medium text-black transition duration-150 border-b-2 border-transparent cursor-pointer hover:border-black md:px-3 lg:px-5"
                   >
                     Customize
                   </a>
@@ -89,9 +89,9 @@ function NavbarToggle() {
               </div>
 
               {/* Search Icon with Input */}
-              <div className="hidden relative md:block">
+              <div className="relative hidden md:block">
                 {/* Search Icon */}
-                <form className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-non lg:ml-11">
+                <form className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-non lg:ml-11">
                   <button
                     type="submit"
                     className="p-1 focus:outline-none focus:shadow-outline"
@@ -124,18 +124,18 @@ function NavbarToggle() {
             </div>
 
             {/* Mobile */}
-            <div className="mr-10 flex md:hidden ">
+            <div className="flex mr-5 md:hidden ">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-500  hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
+                className="inline-flex items-center justify-center p-2 text-gray-500 bg-white rounded-md hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
                   <svg
-                    className="block h-6 w-6"
+                    className="block w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -151,7 +151,7 @@ function NavbarToggle() {
                   </svg>
                 ) : (
                   <svg
-                    className="block h-6 w-6"
+                    className="block w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -181,10 +181,10 @@ function NavbarToggle() {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden flex justify-center" id="mobile-menu">
+            <div className="flex justify-center md:hidden" id="mobile-menu">
               <div
                 ref={ref}
-                className="bg-white px-2 pt-2 pb-3 space-y-2 sm:px-3"
+                className="px-2 pt-2 pb-3 space-y-2 bg-white sm:px-3"
               >
                 <a
                   href="https://www.nike.com/ph/men"
@@ -195,7 +195,7 @@ function NavbarToggle() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black block text-center py-2 rounded-md text-base font-medium"
+                  className="block py-2 text-base font-medium text-center text-black transition duration-150 border-b-2 border-transparent rounded-md cursor-pointer hover:border-black hover:text-black"
                 >
                   Men
                 </a>
@@ -208,7 +208,7 @@ function NavbarToggle() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black  block text-center py-2 rounded-md text-base font-medium"
+                  className="block py-2 text-base font-medium text-center text-black transition duration-150 border-b-2 border-transparent rounded-md cursor-pointer hover:border-black hover:text-black"
                 >
                   Women
                 </a>
@@ -222,7 +222,7 @@ function NavbarToggle() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black  block text-center py-2 rounded-md text-base font-medium"
+                  className="block py-2 text-base font-medium text-center text-black transition duration-150 border-b-2 border-transparent rounded-md cursor-pointer hover:border-black hover:text-black"
                 >
                   Kids
                 </a>
@@ -235,7 +235,7 @@ function NavbarToggle() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-black text-black hover:text-black  block text-center py-2 rounded-md text-base font-medium"
+                  className="block py-2 text-base font-medium text-center text-black transition duration-150 border-b-2 border-transparent rounded-md cursor-pointer hover:border-black hover:text-black"
                 >
                   Customize
                 </a>
